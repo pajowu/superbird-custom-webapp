@@ -6,6 +6,8 @@ All actions not marked otherwise **should** be temporary, i.e. have no action an
 
 > :warning: Warning: **Use at your own risk**
 
+![a spotify car thing showing the text "Congratulations, you are running a custom webapp on your car thing. The current time is 2015-01-01"](example_webapp.jpg)
+
 ## Usage
 
 ### Preparing your device
@@ -34,7 +36,6 @@ If you have multiple adb devices, you can specify the device id of you car thing
 ```bash
 ./scripts/load_webapp.sh example_webapp/ 123456
 ```
-
 
 ### Restoring the old webapp
 
