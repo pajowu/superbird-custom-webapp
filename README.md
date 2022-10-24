@@ -62,6 +62,16 @@ For dumping the currently active webapp, you can simply use `adb`, no need for a
 adb pull /usr/share/qt-superbird-app/webapp/ OUTPUT_PATH
 ```
 
+### Forwarding the websocket from the device
+
+If you want to develop a part of your webapp which needs the control websocket, you can forward it to your computer:
+
+```bash
+adb forward tcp:8890 tcp:8890
+```
+
+This way you can develop the app on your computer without having to reupload it to your device all the time.
+
 ## Internals
 
 The script uploads the webapp to `/tmp/webapp` and bind-mounts it into the place the superbird binary expects it to be (`/usr/share/qt-superbird-app/webapp/`).
