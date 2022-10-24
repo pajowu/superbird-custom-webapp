@@ -17,7 +17,7 @@ Perform all steps up to and including [Boot kernel from USB to enable ADB access
 
 You need a working `adb` connection to your device.
 
-### Loading a custom WebApp
+### Loading a custom build WebApp
 
 Using `scripts/load_webapp.sh`, you can upload a custom webapp to your car thing.
 
@@ -35,6 +35,15 @@ If you have multiple adb devices, you can specify the device id of you car thing
 
 ```bash
 ./scripts/load_webapp.sh example_webapp/ 123456
+```
+
+### Loading a react based webapp
+
+The `react_webapp` directory contains a small react-based demo app with some helper for properly
+using the car thing (buttons, "hey spotify", ...). To build and start it, run
+
+```bash
+./scripts/load_react_webapp.sh react_webapp
 ```
 
 ### Restoring the old webapp
